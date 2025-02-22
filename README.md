@@ -1,5 +1,7 @@
 # Markdown Wrapper for Checkout UI Extensions
 
+### [Preview](https://ui-extension-markdown-wrapper.myshopify.com/) | `ocontis_studio`
+
 This template includes a React-based Markdown renderer specifically designed for Shopify Checkout UI Extensions. The component transforms Markdown syntax into Shopify's UI Extension components, providing a seamless way to display formatted content in your checkout experience.
 
 #### Supported Features:
@@ -32,6 +34,11 @@ Questions? Contact us at *support@example.com*
 
 return renderMarkdown(markdownContent);
 ```
+
+<div style="display: flex; gap: 20px; margin: 20px 0;">
+    <img src="https://github.com/octipus/shopify-ui-extension-markdown/blob/main/images/input.png?raw=true" alt="Markdown Input" width="34%"/>
+    <img src="https://github.com/octipus/shopify-ui-extension-markdown/blob/main/images/output.png?raw=true" alt="Rendered Output" width="65%"/>
+</div>
 
 ## Getting started
 
