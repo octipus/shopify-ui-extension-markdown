@@ -1,14 +1,14 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "3cb25ec81a121eefc2c37b3a1e84065f"
+client_id = "9cd09d73b01270bdc5ee81d64a4d80c7"
 application_url = "https://shopify.dev/apps/default-app-home"
 embedded = true
 name = "markdown-wrapper"
-handle = "markdown-wrapper-1"
+handle = "markdown-wrapper"
 
 [build]
+dev_store_url = "ui-extension-markdown-wrapper.myshopify.com"
 include_config_on_deploy = true
-dev_store_url = "ui-extensions-markdown-wrapper.myshopify.com"
 
 [webhooks]
 api_version = "2025-01"
