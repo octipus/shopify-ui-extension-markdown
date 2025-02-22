@@ -1,4 +1,41 @@
-# Shopify App Template - Extension only
+# Markdown Wrapper for Checkout UI Extensions
+
+This template includes a React-based Markdown renderer specifically designed for Shopify Checkout UI Extensions. The component transforms Markdown syntax into Shopify's UI Extension components, providing a seamless way to display formatted content in your checkout experience.
+
+#### Supported Features:
+- **Headings**: Supports h1, h2, and h3 (`#`, `##`, `###`)
+- **Text Formatting**: 
+  - Bold text (`**text**`)
+  - Italic text (`*text*`)
+- **Lists**:
+  - Unordered lists (`- item`)
+  - Ordered lists (`1. item`)
+- **Horizontal Rules**: Dividers using (`---`)
+- **Paragraphs**: Regular text blocks with support for inline formatting
+
+#### Usage Example
+
+```typescript
+const markdownContent = `
+# Welcome to our store!
+**Free shipping** on orders over $50.
+
+### Key Benefits:
+1. Fast delivery
+2. Premium quality
+3. 24/7 support
+
+--- 
+
+Questions? Contact us at *support@example.com*
+`;
+
+return renderMarkdown(markdownContent);
+```
+
+## Getting started
+
+### Shopify App Template - Extension only
 
 This is a template for building an [extension-only Shopify app](https://shopify.dev/docs/apps/build/app-extensions/build-extension-only-app). It contains the basics for building a Shopify app that uses only app extensions.
 
@@ -6,18 +43,10 @@ This template doesn't include a server or the ability to embed a page in the Sho
 
 Whether you choose to use this template or another one, you can use your preferred package manager and the Shopify CLI with [these steps](#installing-the-template).
 
-## Benefits
-
-Shopify apps are built on a variety of Shopify tools to create a great merchant experience. The [create an app](https://shopify.dev/docs/apps/getting-started/create) tutorial in our developer documentation will guide you through creating a Shopify app.
-
-This app template does little more than install the CLI and scaffold a repository.
-
-## Getting started
-
 ### Requirements
 
 1. You must [download and install Node.js](https://nodejs.org/en/download/) if you don't already have it.
-1. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don’t have one.
+1. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don't have one.
 1. You must create a store for testing if you don't have one, either a [development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) or a [Shopify Plus sandbox store](https://help.shopify.com/en/partners/dashboard/managing-stores/plus-sandbox-store).
 
 ### Installing the template
@@ -69,6 +98,14 @@ pnpm run dev
 ```
 
 Open the URL generated in your console. Once you grant permission to the app, you can start development (such as generating extensions).
+
+## Markdown Wrapper Limitations
+
+- Nested lists are not supported
+- Only supports single-level headings (no nested sections)
+- Links are not currently supported
+- Images are not supported
+- Code blocks are not supported
 
 ## Developer resources
 
